@@ -1,0 +1,25 @@
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.env
+
+# Large data files at ROOT only
+/*.txt
+!requirements.txt
+
+# Checkpoints (too big for GitHub)
+checkpoints/
+*.pt
+*.pth
+
+# IDE
+.idea/
+.vscode/
+*.swp
+EOF
